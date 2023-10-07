@@ -1,16 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
+using Newtonsoft.Json;
+
+
 
 public class CardManagerScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public class Option
+    {
+        public string OptionName { get; set; }
+        public int CrewMorale { get; set; }
+        public int ShipCondition { get; set; }
+        public int CaptainSanity { get; set; }
+        public int Supplies { get; set; }
+
+        public string feedback { get; set; }
+    }
+    public class Card
+    {
+        bool wasPlayed;
+        public string CardName { get; set; }
+        public string Description { get; set; }
+        public int Probability { get; set; }
+        public List<Option> Options { get; set; }
+
+
+    }
+    public class allCardsClass
+    {
+        public List<Card> allCards;
+    }
+   
+
+    public string fileName = "Assets/Data/Cards.json";
+
     void Start()
     {
-        
+        allCardsClass Cards;
+        string jsonString = File.ReadAllText(fileName);
+        Cards = JsonConvert.DeserializeObject<allCardsClass>(jsonString);
+        Debug.Log(Cards.allCards[1].Options[0].OptionName);
+
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         

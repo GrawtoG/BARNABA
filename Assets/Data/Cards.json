@@ -1,0 +1,225 @@
+{
+
+  "allCards": [
+    {
+      "CardName": "Strange Cosmic Signal",
+      "Description": "While on your mission, the spaceship detected a mysterious and unidentifiable cosmic signal. It could be a transmission from an alien civilization, but its intentions are unknown. This discovery presents both opportunities and potential threats. You must decide how to proceed and consider the risks involved in contacting or ignoring the signal.",
+      "Probability": 15,
+      "Options": [
+        {
+          "OptionName": "Attempt to decode and respond to the signal",
+          "CrewMorale": 10,
+          "ShipCondition": 0,
+          "CaptainSanity": 10,
+          "Supplies": -5,
+          "Feedback": "You successfully decode and respond to the cosmic signal, initiating contact with an alien civilization. The crew is excited, and morale improves. The aliens seem friendly and willing to communicate. However, responding consumes some supplies."
+        },
+        {
+          "OptionName": "Monitor the signal without responding",
+          "CrewMorale": 0,
+          "ShipCondition": 0,
+          "CaptainSanity": 5,
+          "Supplies": 0,
+          "Feedback": "You choose to monitor the signal without responding. The crew remains neutral, but you are intrigued by the mysterious signal. Your sanity improves as you continue to observe the alien transmission, and no supplies are consumed."
+        },
+        {
+          "OptionName": "Ignore the signal and continue the mission",
+          "CrewMorale": -10,
+          "ShipCondition": 0,
+          "CaptainSanity": -10,
+          "Supplies": 0,
+          "Feedback": "You decide to ignore the cosmic signal and prioritize the mission. The crew is disappointed, and morale declines. Your sanity suffers due to the curiosity left unsatisfied. No supplies are consumed, but the alien signal remains unexplored."
+        }
+      ]
+    },
+
+    {
+      "CardName": "Main Power Battery Malfunction",
+      "Description": "The main power battery of the spaceship has malfunctioned, and it's causing a significant power outage throughout the ship. This threatens the functionality of critical systems and could jeopardize the mission. You need to make a decision on how to address this critical issue, considering the available options and their consequences.",
+      "Probability": 15,
+      "Options": [
+        {
+          "OptionName": "Attempt to repair the main power battery",
+          "CrewMorale": 5,
+          "ShipCondition": -15,
+          "CaptainSanity": 5,
+          "Supplies": -10,
+          "Feedback": "You successfully repair the main power battery, restoring power to critical systems. The crew is relieved, and their morale remains stable. However, some supplies were used in the process, and the ship's condition takes a moderate hit."
+        },
+        {
+          "OptionName": "Reroute power from non-essential systems to compensate for the outage",
+          "CrewMorale": -10,
+          "ShipCondition": -5,
+          "CaptainSanity": -5,
+          "Supplies": -5,
+          "Feedback": "You choose to reroute power from non-essential systems to compensate for the power outage. The crew is not pleased with the situation, and morale declines. The ship's condition takes a minor hit, and some supplies are consumed to keep critical systems operational."
+        },
+        {
+          "OptionName": "Ignore the malfunction and continue the mission with reduced power",
+          "CrewMorale": -20,
+          "ShipCondition": -20,
+          "CaptainSanity": -10,
+          "Supplies": -15,
+          "Feedback": "You decide to ignore the malfunction in the main power battery and proceed with the mission, but with reduced power. The crew is outraged, and morale hits  low. The ship's condition deteriorates, and the mission's success is in jeopardy due to limited power."
+        }
+      ]
+    },
+    {
+      "CardName": "Micro-Meteoroid Impact",
+      "Description": "A micro-meteoroid has struck one of the spaceship's solar panels, causing damage. This impacts the ship's power generation, which is critical for the mission's success. You need to make a decision on how to address this situation, considering the available options and their consequences.",
+      "Probability": 15,
+      "Options": [
+        {
+          "OptionName": "Attempt to repair the damaged solar panel",
+          "CrewMorale": 5,
+          "ShipCondition": -10,
+          "CaptainSanity": 5,
+          "Supplies": -5,
+          "Feedback": "You successfully repair the damaged solar panel. The crew is relieved, and their morale remains stable. However, some supplies were used in the process, and the ship's condition takes a minor hit."
+        },
+        {
+          "OptionName": "Redirect power from other systems to compensate for the loss",
+          "CrewMorale": -5,
+          "ShipCondition": 0,
+          "CaptainSanity": -5,
+          "Supplies": 0,
+          "Feedback": "You choose to redirect power from other systems to compensate for the loss in power generation. The crew is not pleased with the situation, and morale declines slightly. The ship's condition remains stable, but the redirected power may affect other critical systems."
+        },
+        {
+          "OptionName": "Ignore the damage and continue the mission",
+          "CrewMorale": -20,
+          "ShipCondition": -10,
+          "CaptainSanity": -10,
+          "Supplies": -10,
+          "Feedback": "You decide to ignore the damage to the solar panel and proceed with the mission. The crew is outraged, and morale hits an all-time low. The ship's condition deteriorates, and the mission's success is in jeopardy due to reduced power."
+        }
+      ]
+    },
+    {
+      "CardName": "Water Purification System Failure",
+      "Description": "The spaceship's water purification system has malfunctioned, posing a serious threat to the crew's water supply. Without a functioning system, the crew's health and morale could deteriorate rapidly. You must decide how to handle this critical situation, considering the available options and their consequences.",
+      "Probability": 15,
+      "Options": [
+        {
+          "OptionName": "Attempt to repair the system using spare parts",
+          "CrewMorale": 10,
+          "ShipCondition": -10,
+          "CaptainSanity": 5,
+          "Supplies": -5,
+          "Feedback": "You successfully repair the water purification system using spare parts. The crew is relieved, and their morale improves. However, some supplies were consumed in the process, and the ship's condition takes a minor hit."
+        },
+        {
+          "OptionName": "Implement water rationing and continue without repairs",
+          "CrewMorale": -5,
+          "ShipCondition": 0,
+          "CaptainSanity": -5,
+          "Supplies": 0,
+          "Feedback": "You decide to implement water rationing and continue the mission without repairing the system. The crew is not pleased with the situation, and morale declines slightly. The ship's condition remains stable, but the crew may become dehydrated over time."
+        },
+        {
+          "OptionName": "Ignore the issue and proceed with the mission",
+          "CrewMorale": -20,
+          "ShipCondition": -10,
+          "CaptainSanity": -10,
+          "Supplies": -10,
+          "Feedback": "You choose to ignore the water purification system failure and continue with the mission. The crew is outraged, and morale hits an all-time low. The ship's condition deteriorates, and the crew's health is at risk due to the lack of clean water. The mission's success is in jeopardy."
+        }
+      ]
+    },
+    {
+      "CardName": "Cargo Hold Leak",
+      "Description": "There is a potential leak in the cargo hold of the spaceship. If not addressed, it could lead to the loss of valuable supplies and jeopardize the mission. You have limited options to deal with this situation, and each choice comes with its own set of consequences and risks. What will you do?",
+      "Probability": 15,
+      "Options": [
+        {
+          "OptionName": "Patch the leak with available repair materials",
+          "CrewMorale": 5,
+          "ShipCondition": -10,
+          "CaptainSanity": 5,
+          "Supplies": -5,
+          "Feedback": "You successfully patch the cargo hold leak using available repair materials. The crew is relieved, and their morale remains stable. However, some supplies were used in the process, and the ship's condition takes a minor hit."
+        },
+        {
+          "OptionName": "Monitor the leak and ration supplies",
+          "CrewMorale": -10,
+          "ShipCondition": 0,
+          "CaptainSanity": -5,
+          "Supplies": 0,
+          "Feedback": "You choose to monitor the leak and ration supplies to minimize further damage. The crew is not happy with the situation, and morale declines. The ship's condition remains unchanged, but supplies may deplete faster."
+        },
+        {
+          "OptionName": "Ignore the leak and continue the mission",
+          "CrewMorale": -20,
+          "ShipCondition": -10,
+          "CaptainSanity": -10,
+          "Supplies": -10,
+          "Feedback": "You decide to ignore the leak and proceed with the mission. The crew is furious, and their morale reaches a new low. The ship's condition deteriorates, and supplies are at risk of being lost. The mission's success is now in jeopardy."
+        }
+      ]
+    },
+
+    {
+      "CardName": "Cryogenic Capsule Malfunction",
+      "Description": "One of the cryogenic capsules, which houses a crew member in hibernation, has malfunctioned. This poses a serious threat to the crew member's life and the overall mission. You must make a decision on how to address this critical issue, taking into account the available options and their consequences.",
+      "Probability": 15,
+      "Options": [
+        {
+          "OptionName": "Attempt an emergency repair on the cryogenic capsule",
+          "CrewMorale": 5,
+          "ShipCondition": -5,
+          "CaptainSanity": 5,
+          "Supplies": -10,
+          "Feedback": "You successfully perform an emergency repair on the malfunctioning cryogenic capsule, saving the crew member's life. The crew is relieved, and morale improves. However, the repair consumes some supplies, and the ship's condition takes a minor hit."
+        },
+        {
+          "OptionName": "Transfer the crew member to a backup cryogenic capsule",
+          "CrewMorale": 10,
+          "ShipCondition": 0,
+          "CaptainSanity": 5,
+          "Supplies": -5,
+          "Feedback": "You transfer the crew member to a backup cryogenic capsule, ensuring their safety. The crew is reassured, and morale remains stable. This option consumes fewer supplies, and the ship's condition remains unchanged."
+        },
+        {
+          "OptionName": "Continue the mission and leave the cryogenic capsule malfunctioning",
+          "CrewMorale": -10,
+          "ShipCondition": 0,
+          "CaptainSanity": -10,
+          "Supplies": 0,
+          "Feedback": "You decide to continue the mission without addressing the cryogenic capsule malfunction. The crew is dismayed, and morale declines. Your sanity is affected by the decision, and no supplies are consumed, but the crew member's life is at risk."
+        }
+      ]
+    },
+    {
+      "CardName": "Navigation System Malfunction",
+      "Description": "The ship's navigation system has malfunctioned, and it's crucial for the safety of the crew and the success of the mission. Unfortunately, there are no spare parts available on the starship to fix it. You must decide how to handle this situation. You have several options, each with its consequences and trade-offs. Choose wisely.",
+      "Probability": 15,
+      "Options": [
+        {
+          "OptionName": "Attempt to repair using spare parts from the communication system",
+          "CrewMorale": 5,
+          "ShipCondition": 0,
+          "CaptainSanity": 5,
+          "Supplies": -10,
+          "Feedback": "By using spare parts from the communication system, you manage to repair the navigation system. The crew is relieved, and you maintain their morale. However, the communication system is now non-functional, which may pose future challenges."
+        },
+        {
+          "OptionName": "Try to navigate manually without repairs",
+          "CrewMorale": -10,
+          "ShipCondition": 0,
+          "CaptainSanity": -5,
+          "Supplies": -5,
+          "Feedback": "You choose to navigate manually without making repairs. It's a challenging task, and the crew is not happy with the increased risk. The starship's condition remains stable for now, but your stress levels rise, affecting your decision-making abilities."
+        },
+        {
+          "OptionName": "Do nothing and continue the mission",
+          "CrewMorale": -20,
+          "ShipCondition": 0,
+          "CaptainSanity": -10,
+          "Supplies": 0,
+          "Feedback": "You decide to proceed with the mission without addressing the navigation system issue. The crew is furious, and their morale hits an all-time low. The starship's condition remains unchanged, but the risk of getting lost or encountering obstacles in space increases significantly."
+        }
+      ]
+    }
+
+  ]
+}
