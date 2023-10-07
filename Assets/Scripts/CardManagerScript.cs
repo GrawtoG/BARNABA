@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.IO;
 using Newtonsoft.Json;
+using TMPro;
 
 
 
 public class CardManagerScript : MonoBehaviour
 {
+
+
+
     public class Option
     {
         public string OptionName { get; set; }
@@ -32,8 +37,10 @@ public class CardManagerScript : MonoBehaviour
     {
         public List<Card> allCards;
     }
-   
 
+    public TextMeshProUGUI titleText;
+    public TextMeshProUGUI descrpitionText;
+    public Image cardImage;
     public string fileName = "Assets/Data/Cards.json";
 
     void Start()
@@ -49,5 +56,14 @@ public class CardManagerScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+
+
+    public void drawRandomCard(int ktoraFaza)
+    {
+
+
+
     }
 }
