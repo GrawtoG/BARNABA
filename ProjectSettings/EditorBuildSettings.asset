@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/1Faze.unity
+    guid: ab486adf5c0805f4fab172932e563f01
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 2eb81700feadb634e9cf9efd5ae6eab8
+  - enabled: 1
+    path: Assets/Scenes/Start Menu.unity
+    guid: 58d498e6dd9241c4189e2c717c973e37
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 3d51b1c6c01669b4cbbbe183b319a3d5, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 25d8a7a7cb694a041a13fcfeb182c0c0, type: 2}
