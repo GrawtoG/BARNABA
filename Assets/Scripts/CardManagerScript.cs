@@ -38,11 +38,13 @@ public class CardManagerScript : MonoBehaviour
         public List<Card> allCards;
     }
 
+    public GameObject _OptionPrefab;
+
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI descrpitionText;
     public Image cardImage;
     public string fileName = "Assets/Data/Cards.json";
-
+    public bool randomizeCard = false;
     void Start()
     {
         
@@ -55,7 +57,11 @@ public class CardManagerScript : MonoBehaviour
     
     void Update()
     {
-        
+        if (randomizeCard)
+        {
+            randomizeCard = false;
+            drawRandomCard(1, false);
+        }
     }
 
 
@@ -65,7 +71,11 @@ public class CardManagerScript : MonoBehaviour
         int index = Random.Range(0, Cards.allCards.Count);
         titleText.text = Cards.allCards[index].CardName;
         descrpitionText.text = Cards.allCards[index].Description;
-
+        for(int i = 0; i < Cards.allCards[index].Options.Count; i++)
+        {
+            GameObject inst = Instantiate(_OptionPrefab, new Vector3(0, 0, 0), Quaternion.identity, this.transform);
+            inst.name = "Option" + i.ToString();
+        }
 
     }
 }
