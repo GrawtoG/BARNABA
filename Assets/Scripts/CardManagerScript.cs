@@ -41,7 +41,7 @@ public class CardManagerScript : MonoBehaviour
         allCardsClass Cards;
         string jsonString = File.ReadAllText(fileName);
         Cards = JsonConvert.DeserializeObject<allCardsClass>(jsonString);
-        Debug.Log(Cards.allCards[1].Options[0].OptionName);
+        Debug.Log(Cards.allCards.Count);
 
     }
 
