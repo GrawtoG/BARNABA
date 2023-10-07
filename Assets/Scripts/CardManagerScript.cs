@@ -10,7 +10,7 @@ using TMPro;
 
 public class CardManagerScript : MonoBehaviour
 {
-
+    public allCardsClass Cards;
 
 
     public class Option
@@ -45,7 +45,7 @@ public class CardManagerScript : MonoBehaviour
 
     void Start()
     {
-        allCardsClass Cards;
+        
         string jsonString = File.ReadAllText(fileName);
         Cards = JsonConvert.DeserializeObject<allCardsClass>(jsonString);
         Debug.Log(Cards.allCards.Count);
@@ -60,9 +60,11 @@ public class CardManagerScript : MonoBehaviour
 
 
 
-    public void drawRandomCard(int ktoraFaza)
+    public void drawRandomCard(int wchichFaze, bool unique)
     {
-
+        int index = Random.Range(0, Cards.allCards.Count);
+        titleText.text = Cards.allCards[index].CardName;
+        descrpitionText.text = Cards.allCards[index].Description;
 
 
     }
