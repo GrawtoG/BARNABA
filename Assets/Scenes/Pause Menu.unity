@@ -580,7 +580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotZ: 1
-  rotZSpeed: 0.08
+  rotZSpeed: 0.04
 --- !u!212 &562360454
 SpriteRenderer:
   m_ObjectHideFlags: 0
